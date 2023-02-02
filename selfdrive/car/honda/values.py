@@ -186,6 +186,34 @@ FW_QUERY_CONFIG = FwQueryConfig(
 )
 
 FW_VERSIONS = {
+# MODIFIED CAR
+  CAR.CIVIC_2023: {
+    (Ecu.programmedFuelInjection, 0x18DA10F1, None): [
+      b'37805-64S-AC10\x00\x00',
+    ],
+    (Ecu.transmission, 0x18DA1EF1, None): [
+      b'28101-65D-A120\x00\x00',
+    ],
+    (Ecu.gateway, 0x18DAF1EF, None): [
+      b'38897-T20-A510\x00\x00',
+    ],
+    (Ecu.eps, 0x18DA30F1, None): [
+      b'39990-T43-J020\x00\x00',
+    ],
+    (Ecu.srs, 0x18DA53F1, None): [
+      b'77959-T47-A950\x00\x00',
+    ],
+    (Ecu.fwdRadar, 0x18DAB0F1, None): [
+      b'8S102-T47-AA10\x00\x00',
+    ],
+    (Ecu.combinationMeter, 0x18DA60F1, None): [
+      b'78108-T23-A120\x00\x00',
+    ],
+    (Ecu.vsa, 0x18DA28F1, None): [
+      b'57114-T43-JB30\x00\x00',
+    ],
+  },
+# END MODIFIED CAR
   CAR.ACCORD: {
     (Ecu.programmedFuelInjection, 0x18da10f1, None): [
       b'37805-6A0-8720\x00\x00',
